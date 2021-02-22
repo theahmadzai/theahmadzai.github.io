@@ -1,0 +1,9 @@
+*.log
+.env*
+.DS_Store
+.cache
+.vscode
+.netlify
+vendor
+node_modules
+public
