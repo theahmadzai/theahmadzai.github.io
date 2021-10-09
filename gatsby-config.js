@@ -3,12 +3,10 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     name: 'Muhammad Javed',
-    url: 'http://theahmadzai.me',
+    url: 'https://theahmadzai.me',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

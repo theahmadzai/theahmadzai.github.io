@@ -2,4 +2,4 @@
 
 theahmadzai.me
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/58001d3b-913f-44ca-bbc8-8473d6d68ec4/deploy-status)](https://app.netlify.com/sites/theahmadzai/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a5b0060-03b5-4388-9d00-2a245049565a/deploy-status)](https://app.netlify.com/sites/theahmadzai/deploys)
