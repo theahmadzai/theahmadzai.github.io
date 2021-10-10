@@ -14,6 +14,10 @@ const theme = merge(system, {
         margin: 0,
         fontFamily: 'monospace',
       },
+      a: {
+        color: 'text',
+        '&.active': { color: 'primary' },
+      },
     },
   },
 })

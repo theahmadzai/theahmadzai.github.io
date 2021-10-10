@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useThemeUI } from 'theme-ui'
+import { jsx, useThemeUI, Flex } from 'theme-ui'
 import Navbar from './navbar'
 import ThemeChanger from './theme-changer'
 
@@ -7,9 +7,9 @@ const Header = () => {
   const { theme } = useThemeUI()
 
   return (
-    <header
+    <Flex
+      as="header"
       sx={{
-        display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         background: theme.colors.background,
@@ -19,7 +19,7 @@ const Header = () => {
     >
       <Navbar />
       <ThemeChanger />
-    </header>
+    </Flex>
   )
 }
 
