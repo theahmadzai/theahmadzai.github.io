@@ -23,7 +23,9 @@ const IndexPage = () => {
               border: `2px solid ${theme.colors.primary}`,
             }}
           />
-          <Heading as="h2">Muhammad Javed</Heading>
+          <Heading as="h1" sx={{ fontSize: '1.5rem' }}>
+            Muhammad Javed
+          </Heading>
           <p>Rawalpindi, Pakistan</p>
           <p>Software Engineer</p>
           <p>Per Diem Subscriptions Inc.</p>
