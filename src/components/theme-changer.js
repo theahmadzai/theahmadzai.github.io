@@ -1,13 +1,35 @@
 /** @jsx jsx */
 import { jsx, useThemeUI, Flex, IconButton } from 'theme-ui'
 
+let cachedSound = null
+
+const beep = () => {
+  try {
+    if (cachedSound) {
+      return () => cachedSound.play()
+    }
+
+    const sound = new Audio('/beep.mp3')
+    cachedSound = sound
+
+    return () => cachedSound.play()
+  } catch (err) {
+    return () => {}
+  }
+}
+
 const ThemeChanger = () => {
+  const playBeep = beep()
   const { theme, setColorMode } = useThemeUI()
 
   return (
     <Flex>
       {Object.entries(theme.rawColors?.modes).map(([mode, values]) => (
-        <IconButton key={mode} onClick={() => setColorMode(mode)}>
+        <IconButton
+          key={mode}
+          onClick={() => setColorMode(mode)}
+          onMouseEnter={playBeep}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
