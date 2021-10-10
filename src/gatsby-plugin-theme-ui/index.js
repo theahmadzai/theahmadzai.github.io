@@ -12,6 +12,7 @@ const theme = merge(system, {
       },
       body: {
         margin: 0,
+        fontFamily: 'monospace',
       },
     },
   },

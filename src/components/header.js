@@ -13,7 +13,7 @@ const Header = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         background: theme.colors.background,
-        borderBottom: `3px solid ${theme.colors.primary}`,
+        borderBottom: `2px solid ${theme.colors.primary}`,
         paddingY: '.5rem',
       }}
     >

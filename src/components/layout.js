@@ -12,7 +12,15 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta name="theme-color" content={theme.colors.primary} />
       </Helmet>
-      <div sx={{ width: '70vw', margin: '0 auto' }}>
+      <div
+        sx={{
+          margin: '0 auto',
+          padding: '1rem 0.5rem',
+          '@media screen and (min-width: 1208px)': {
+            padding: '1rem calc((100vw - 1200px) / 2)',
+          },
+        }}
+      >
         <Header />
         <main>{children}</main>
       </div>
