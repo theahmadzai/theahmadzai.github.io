@@ -2,6 +2,7 @@
 import { jsx, useThemeUI } from 'theme-ui'
 import { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
+import Header from './header'
 
 const Layout = ({ children }) => {
   const { theme } = useThemeUI()
@@ -11,14 +12,10 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta name="theme-color" content={theme.colors.primary} />
       </Helmet>
-      <main
-        sx={{
-          width: '70vw',
-          margin: '0 auto',
-        }}
-      >
-        {children}
-      </main>
+      <div sx={{ width: '70vw', margin: '0 auto' }}>
+        <Header />
+        <main>{children}</main>
+      </div>
     </Fragment>
   )
 }

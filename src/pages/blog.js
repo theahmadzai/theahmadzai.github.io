@@ -2,12 +2,12 @@
 import { jsx, Themed } from 'theme-ui'
 import Layout from '../components/layout'
 
-const IndexPage = () => {
+const BlogPage = () => {
   return (
     <Layout>
-      <Themed.h1>Muhammad Javed</Themed.h1>
+      <Themed.h1>Blog</Themed.h1>
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPage

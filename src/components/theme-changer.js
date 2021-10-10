@@ -14,10 +14,13 @@ const ThemeChanger = () => {
           onClick={() => setColorMode(mode)}
           onKeyPress={() => setColorMode(mode)}
           sx={{
-            bg: values.background,
-            border: `1px solid ${values.text}`,
+            background: values.background,
+            border: `1px solid ${theme.colors.text}`,
+            borderRadius: '100%',
             width: '2rem',
             height: '2rem',
+            marginLeft: '0.4rem',
+            cursor: 'pointer',
           }}
         />
       ))}
