@@ -29,12 +29,17 @@
     "npm": "7.x"
   },
   "dependencies": {
+    "@theme-ui/presets": "^0.11.3",
     "gatsby": "^4.0.0-zz-next.2",
+    "gatsby-plugin-canonical-urls": "^4.0.0-zz-next.1",
+    "gatsby-plugin-offline": "^5.0.0-zz-next.2",
     "gatsby-plugin-react-helmet": "^5.0.0-zz-next.1",
+    "gatsby-plugin-theme-ui": "^0.6.0-alpha.8",
     "gatsby-source-filesystem": "^4.0.0-zz-next.2",
     "react": "^18.0.0-alpha-5fa4d79b0-20211008",
     "react-dom": "^18.0.0-alpha-5fa4d79b0-20211008",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "theme-ui": "^0.11.3"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -43,12 +48,9 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-netlify": "^4.0.0-next.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.2",
-    "prettier": "^2.4.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-css-modules": "^2.2.0",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^22.0.0"
+    "prettier": "^2.4.1"
   }
 }
