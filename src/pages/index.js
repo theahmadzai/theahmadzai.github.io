@@ -34,6 +34,7 @@ const IndexPage = () => {
               href="https://github.com/theahmadzai"
               target="_blank"
               rel="noreferrer"
+              sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <Github />
             </a>
@@ -41,6 +42,7 @@ const IndexPage = () => {
               href="https://twitter.com/theahmadzai786"
               target="_blank"
               rel="noreferrer"
+              sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <Twitter />
             </a>
@@ -48,6 +50,7 @@ const IndexPage = () => {
               href="https://www.linkedin.com/in/theahmadzai"
               target="_blank"
               rel="noreferrer"
+              sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <LinkedIn />
             </a>
