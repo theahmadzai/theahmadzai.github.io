@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useThemeUI, Grid, Box, Heading } from 'theme-ui'
+import { jsx, useThemeUI, Grid, Box, Heading, Link, Text } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import { Github, Twitter, LinkedIn } from '../components/svg'
@@ -30,41 +30,41 @@ const IndexPage = () => {
           <p>Software Engineer</p>
           <p>Per Diem Subscriptions Inc.</p>
           <Grid columns={'repeat(3, 2rem)'}>
-            <a
+            <Link
               href="https://github.com/theahmadzai"
               target="_blank"
               rel="noreferrer"
               sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <Github />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://twitter.com/theahmadzai786"
               target="_blank"
               rel="noreferrer"
               sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <Twitter />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/theahmadzai"
               target="_blank"
               rel="noreferrer"
               sx={{ ':hover': { color: theme.colors.primary } }}
             >
               <LinkedIn />
-            </a>
+            </Link>
           </Grid>
         </Box>
         <Box p={2}>
-          <p sx={{ textAlign: 'justify' }}>
+          <Text sx={{ textAlign: 'justify' }}>
             Javed here, I work as a Full Stack Engineer at Per Diem
             Subscriptions Inc. I have good grasp of JavaScript based both
             backend &amp; frontend frameworks, I have hands-on experience in
             modern serverless JAMStack development. I prefer to create fast
             serverless progressive web apps using GraphQL, Gatsby, Nextjs,
             Contentful &amp; faunaDB with modularity and scalability in mind.
-          </p>
+          </Text>
         </Box>
       </Grid>
     </Layout>

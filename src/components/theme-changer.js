@@ -24,7 +24,7 @@ const ThemeChanger = () => {
 
   return (
     <Flex>
-      {Object.entries(theme.rawColors?.modes).map(([mode, values]) => (
+      {Object.entries(theme.rawColors.modes).map(([mode, values]) => (
         <IconButton
           key={mode}
           onClick={() => setColorMode(mode)}
