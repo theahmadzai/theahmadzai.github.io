@@ -14,7 +14,6 @@ const Navbar = () => {
   return (
     <Flex as="nav">
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/blog">Blog</NavLink>
       <NavLink to="/contact">Contact</NavLink>
     </Flex>
   )

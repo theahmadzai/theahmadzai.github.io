@@ -14,31 +14,52 @@ import Layout from '../components/layout'
 const ContactPage = () => {
   const { theme } = useThemeUI()
 
+  const handleSubmit = e => {
+    e.preventDefault()
+  }
+
   return (
     <Layout>
       <Box
         as="form"
-        onSubmit={e => e.preventDefault()}
         marginTop={4}
-        marginX={'auto'}
         p={4}
         sx={{
-          width: [null, null, '40rem'],
+          borderRadius: 11,
           border: `2px solid ${theme.colors.primary}`,
         }}
+        onSubmit={handleSubmit}
       >
-        <Heading as="h1" mb={4}>
-          Message Me
+        <Heading as="h1" mb={3}>
+          Contact
         </Heading>
 
         <Label htmlFor="name">Name</Label>
-        <Input type="text" name="name" id="name" mb={3} />
+        <Input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Full Name"
+          mb={3}
+        />
 
-        <Label htmlFor="email">Email</Label>
-        <Input type="text" name="email" id="email" mb={3} />
+        <Label htmlFor="email">Email Address</Label>
+        <Input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+          mb={3}
+        />
 
         <Label htmlFor="message">Message</Label>
-        <Textarea name="message" id="message" rows={6} mb={3} />
+        <Textarea
+          name="message"
+          id="message"
+          placeholder="Message..."
+          rows={6}
+          mb={3}
+        />
 
         <Button>Submit</Button>
       </Box>
