@@ -9,24 +9,17 @@ const IndexPage = () => {
   const { theme } = useThemeUI()
   const [swapped, swapImages] = useState(false)
 
-  const small = {
-    position: 'absolute',
-    right: 13,
-    bottom: 13,
-    width: '40px',
-    height: '40px',
+  const getImageStyles = swapped => ({
     borderRadius: '100%',
-    zIndex: 10,
-    border: `1px solid ${theme.colors.primary}`,
-  }
-
-  const large = {
-    position: 'absolute',
-    width: '200px',
-    borderRadius: '100%',
-    marginBottom: '1rem',
-    border: `2px solid ${theme.colors.primary}`,
-  }
+    border: `${swapped ? 1 : 2}px solid ${theme.colors.primary}`,
+    width: swapped ? '40px' : '200px',
+    ...(swapped && { height: '40px' }),
+    ...(swapped && { position: 'absolute' }),
+    ...(swapped && { right: 13 }),
+    ...(swapped && { bottom: 13 }),
+    ...(swapped && { zIndex: 10 }),
+    ...(!swapped && { marginBottom: '1rem' }),
+  })
 
   return (
     <Layout>
@@ -50,8 +43,8 @@ const IndexPage = () => {
               <StaticImage
                 src="https://gravatar.com/avatar/7b3c62974e72da38226c7657c2cb5069?s=800"
                 alt="Muhammad Javed"
-                placeholder="tracedSVG"
-                sx={swapped ? small : large}
+                placeholder="blurred"
+                sx={getImageStyles(swapped)}
               />
             </div>
             <div
@@ -63,8 +56,8 @@ const IndexPage = () => {
               <StaticImage
                 src="https://gravatar.com/avatar/8afecd537241b15296a3151a18b6f9ee?s=800"
                 alt="Muhammad Javed"
-                placeholder="tracedSVG"
-                sx={swapped ? large : small}
+                placeholder="blurred"
+                sx={getImageStyles(!swapped)}
                 onClick={() => swapImages(v => !v)}
               />
             </div>

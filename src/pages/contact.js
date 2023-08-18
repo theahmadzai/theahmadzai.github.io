@@ -1,19 +1,8 @@
 /** @jsx jsx */
-import {
-  jsx,
-  useThemeUI,
-  Box,
-  Heading,
-  Label,
-  Input,
-  Textarea,
-  Button,
-} from 'theme-ui'
+import { jsx, Box, Heading, Label, Input, Textarea, Button } from 'theme-ui'
 import Layout from '../components/layout'
 
 const ContactPage = () => {
-  const { theme } = useThemeUI()
-
   const handleSubmit = e => {
     e.preventDefault()
   }
@@ -26,7 +15,7 @@ const ContactPage = () => {
         p={4}
         sx={{
           borderRadius: 11,
-          border: `2px solid ${theme.colors.primary}`,
+          border: theme => `2px solid ${theme.colors.primary}`,
         }}
         onSubmit={handleSubmit}
       >
