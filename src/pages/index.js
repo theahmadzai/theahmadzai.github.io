@@ -65,7 +65,7 @@ const IndexPage = () => {
           <Heading as="h1" sx={{ fontSize: '1.5rem' }}>
             Muhammad Javed
           </Heading>
-          <p>Rawalpindi, Pakistan</p>
+          <p>Antigonish, Canada</p>
           <p>Software Engineer</p>
           <p>Per Diem Subscriptions, Inc.</p>
           <Grid columns={'repeat(3, 2rem)'}>
