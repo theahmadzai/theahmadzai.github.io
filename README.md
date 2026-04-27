@@ -8,7 +8,7 @@ Personal portfolio. Single-page Next.js site with a retro-pixel identity, deploy
 - **React 19**, **TypeScript 5**
 - **Tailwind CSS v4** (CSS-based config, no `tailwind.config.ts`)
 - **Biome** for lint + format (replaces ESLint/Prettier)
-- **Cloudflare Pages** for hosting (fully static — no backend, no env vars)
+- **Cloudflare Pages** for hosting (fully static - no backend, no env vars)
 
 ## Local development
 
@@ -52,7 +52,7 @@ Light/dark only. Tokens defined in [`src/app/globals.css`](src/app/globals.css) 
 
 ## Avatar
 
-The hero avatar is the file at [`public/avatar.png`](public/avatar.png) — a 256×256 pixel-art portrait. To swap it, replace that file (keep the same path/filename, square aspect ratio recommended).
+The hero avatar is the file at [`public/avatar.png`](public/avatar.png) - a 256×256 pixel-art portrait. To swap it, replace that file (keep the same path/filename, square aspect ratio recommended).
 
 ## Deploying
 
