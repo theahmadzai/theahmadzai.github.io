@@ -8,7 +8,7 @@ export const profile = {
   email: "info@javedahmadzai.com",
   tagline: "I build scalable backend APIs and polished web + mobile apps.",
   about:
-    "Senior Software Developer with a Master's in Applied Computer Science and 5+ years building production web and mobile apps for the restaurant industry. Core engineer at a YC-backed startup, owning payment systems (Stripe, Square), delivery integrations (Uber Direct, DoorDash Drive), and scheduling infrastructure for 1,000+ merchants (2,000+ locations) and 1M+ users on 1,600+ white-label iOS and Android apps. Published open-source npm libraries (@perdieminc/order-pacing, @perdieminc/perdiem-models) in active production use.",
+    "Senior Software Developer with a Master's in Applied Computer Science and 5+ years building production web and mobile apps for the restaurant industry. Core engineer at a YC-backed startup, owning payment systems (Stripe, Square), delivery integrations (Uber Direct, DoorDash Drive), and scheduling infrastructure for 800+ merchants (2,000+ locations) and 1M+ users on 800+ white-label apps across iOS and Android. Published open-source npm libraries (@perdieminc/order-pacing, @perdieminc/perdiem-models) in active production use.",
   aboutLinks: {
     "@perdieminc/order-pacing": "https://www.npmjs.com/package/@perdieminc/order-pacing",
     "@perdieminc/perdiem-models": "https://www.npmjs.com/package/@perdieminc/perdiem-models",

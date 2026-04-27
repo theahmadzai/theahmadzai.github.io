@@ -24,7 +24,7 @@ export const experience: Experience[] = [
     logoDark: "/logos/perdiem-dark.svg",
     lead: "Led development of white-label multi-tenant restaurant apps (React Native) including custom theming and automated Fastlane publishing pipelines. Managed complex app state using Redux and Redux Sagas.",
     bullets: [
-      "Built automated Fastlane publishing pipeline that generated and deployed 800+ white-label iOS and Android apps to the App Store and Google Play, eliminating manual release intervention.",
+      "Built automated Fastlane publishing pipeline that generated and deployed 800+ white-label apps to the App Store and Google Play, eliminating manual release intervention.",
       "Architected payment infrastructure integrating Stripe and Square POS, handling transaction processing, recurring subscription billing, processing refunds and automated fee calculations via webhooks for 2,000+ locations.",
       "Built delivery integrations with Uber Direct and DoorDash Drive APIs, enabling last-mile delivery with real-time order tracking and status webhooks at scale.",
       "Built pickup and delivery scheduling including time-slot generation, restricted dates, and per-merchant availability rules - handling timezone edge cases and real-time slot updates.",
