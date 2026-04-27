@@ -50,7 +50,7 @@ export function Experience() {
                   </div>
                 </div>
                 <p className="font-mono text-sm text-fg/50">
-                  {job.start} — {job.end}
+                  {job.start} - {job.end}
                 </p>
               </div>
               {job.lead && (

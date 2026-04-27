@@ -18,7 +18,7 @@ export function Education() {
               </p>
             </div>
             <p className="font-mono text-sm text-fg/50">
-              {entry.start} — {entry.end}
+              {entry.start} - {entry.end}
             </p>
           </li>
         ))}

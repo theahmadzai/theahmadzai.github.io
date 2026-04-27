@@ -5,6 +5,7 @@ import { ThemeToggle } from "./theme-toggle";
 const links = [
   { href: "#about", label: "about" },
   { href: "#experience", label: "experience" },
+  { href: "#projects", label: "projects" },
   { href: "#skills", label: "skills" },
   { href: "#contact", label: "contact" },
 ];
@@ -15,7 +16,7 @@ export function Nav() {
       <div className="relative mx-auto flex max-w-3xl items-center justify-between gap-3">
         <a
           href="#top"
-          aria-label={`${profile.name} — back to top`}
+          aria-label={`${profile.name} - back to top`}
           className="font-pixel text-2xl text-fg transition-colors hover:text-accent"
         >
           {"</>"}

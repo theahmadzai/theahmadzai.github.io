@@ -65,6 +65,20 @@ export function EducationIcon({ className }: IconProps) {
   );
 }
 
+export function ProjectsIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 16 16" fill="currentColor" className={className} aria-hidden>
+      <rect x="2" y="3" width="5" height="1" />
+      <rect x="2" y="4" width="12" height="1" />
+      <rect x="1" y="5" width="14" height="8" />
+      <rect x="2" y="6" width="12" height="6" fill="var(--color-bg)" />
+      <rect x="4" y="8" width="2" height="2" fill="currentColor" />
+      <rect x="7" y="8" width="2" height="2" fill="currentColor" />
+      <rect x="10" y="8" width="2" height="2" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function ContactIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 16 16" fill="currentColor" className={className} aria-hidden>

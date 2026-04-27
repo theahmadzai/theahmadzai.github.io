@@ -20,4 +20,5 @@ export const profile = {
     email: "mailto:info@javedahmadzai.com",
   },
   resumeUrl: "/resume.pdf",
+  resumeFileName: "Muhammad Javed - Resume.pdf",
 } as const;

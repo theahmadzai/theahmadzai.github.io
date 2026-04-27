@@ -18,8 +18,8 @@ const SITE_URL = "https://javedahmadzai.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${profile.name} — ${profile.title}`,
-    template: `%s — ${profile.name}`,
+    default: `${profile.name} - ${profile.title}`,
+    template: `%s - ${profile.name}`,
   },
   description: profile.tagline,
   keywords: [
@@ -37,20 +37,20 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: SITE_URL,
     siteName: profile.name,
-    title: `${profile.name} — ${profile.title}`,
+    title: `${profile.name} - ${profile.title}`,
     description: profile.tagline,
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: `${profile.name} — ${profile.title}`,
+        alt: `${profile.name} - ${profile.title}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — ${profile.title}`,
+    title: `${profile.name} - ${profile.title}`,
     description: profile.tagline,
     creator: "@theahmadzai786",
     images: ["/og.png"],

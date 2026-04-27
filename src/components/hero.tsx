@@ -24,7 +24,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={profile.resumeUrl}
-              download
+              download={profile.resumeFileName}
               className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 font-mono text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-accent-bright hover:shadow-[0_4px_0_0_rgb(10_22_40)] active:translate-y-0 active:shadow-none"
             >
               <svg
