@@ -11,31 +11,27 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "Order Pacing",
-    blurb:
-      "Published npm package for pickup and delivery order throttling and pacing at scale.",
+    blurb: "Published npm package for pickup and delivery order throttling and pacing at scale.",
     stack: ["Node.js"],
     url: "https://github.com/PerDiemInc/order-pacing",
     tags: ["work"],
   },
   {
     name: "Per Diem Models",
-    blurb:
-      "Shared database model and caching layer on Knex.js and Redis (published npm package).",
+    blurb: "Shared database model and caching layer on Knex.js and Redis (published npm package).",
     stack: ["Node.js", "Redis", "Knex.js"],
     tags: ["work"],
   },
   {
     name: "Recommendation Engine",
-    blurb:
-      "AWS-backed product recommendation engine for white-label restaurant apps.",
+    blurb: "AWS-backed product recommendation engine for white-label restaurant apps.",
     stack: ["Python", "AWS"],
     url: "https://github.com/theahmadzai/recommendation-engine",
     tags: ["hobby"],
   },
   {
     name: "Image Panda",
-    blurb:
-      "Cross-platform desktop app for batch image compression - offline + TinyPNG.",
+    blurb: "Cross-platform desktop app for batch image compression - offline + TinyPNG.",
     stack: ["Electron", "React"],
     url: "https://github.com/theahmadzai/image-panda",
     tags: ["hobby"],

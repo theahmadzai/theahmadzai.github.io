@@ -105,10 +105,14 @@ doc
 // === Hero: name in pixel font. ===
 doc.x = MARGIN;
 doc.y = MARGIN;
-doc.font("Pixel").fontSize(44).fillColor(FG).text(profile.name, MARGIN, MARGIN, {
-  width: CONTENT_W - 80,
-  lineBreak: false,
-});
+doc
+  .font("Pixel")
+  .fontSize(44)
+  .fillColor(FG)
+  .text(profile.name, MARGIN, MARGIN, {
+    width: CONTENT_W - 80,
+    lineBreak: false,
+  });
 
 // === Title + location. ===
 doc.moveDown(0.1);
@@ -166,16 +170,12 @@ for (const role of experience) {
     doc.moveDown(0.25);
   }
   for (const bullet of role.bullets) {
-    doc
-      .font("Helvetica")
-      .fontSize(10)
-      .fillColor(FG)
-      .text(`•  ${bullet}`, {
-        indent: 6,
-        align: "left",
-        lineGap: 1,
-        paragraphGap: 3,
-      });
+    doc.font("Helvetica").fontSize(10).fillColor(FG).text(`•  ${bullet}`, {
+      indent: 6,
+      align: "left",
+      lineGap: 1,
+      paragraphGap: 3,
+    });
   }
   doc.moveDown(0.3);
 }
@@ -222,14 +222,8 @@ for (const project of projects) {
       const text = tag.toUpperCase();
       const textW = doc.widthOfString(text);
       const chipW = textW + padX * 2;
-      doc
-        .lineWidth(0.6)
-        .strokeColor(TAG_COLORS[tag])
-        .rect(x, startY, chipW, chipH)
-        .stroke();
-      doc
-        .fillColor(TAG_COLORS[tag])
-        .text(text, x + padX, startY + padY, { lineBreak: false });
+      doc.lineWidth(0.6).strokeColor(TAG_COLORS[tag]).rect(x, startY, chipW, chipH).stroke();
+      doc.fillColor(TAG_COLORS[tag]).text(text, x + padX, startY + padY, { lineBreak: false });
       x += chipW + gap;
     }
     doc.x = MARGIN;
@@ -241,11 +235,7 @@ for (const project of projects) {
   doc.font("Helvetica").fontSize(10).fillColor(FG).text(project.blurb, {
     lineGap: 1,
   });
-  doc
-    .font("Helvetica-Oblique")
-    .fontSize(9)
-    .fillColor(MUTED)
-    .text(project.stack.join(" · "));
+  doc.font("Helvetica-Oblique").fontSize(9).fillColor(MUTED).text(project.stack.join(" · "));
   doc.moveDown(0.3);
 }
 
@@ -253,11 +243,7 @@ for (const project of projects) {
 sectionHeader("education");
 for (const edu of education) {
   rowSplit(edu.school, `${edu.start} - ${edu.end}`);
-  doc
-    .font("Helvetica")
-    .fontSize(10)
-    .fillColor(MUTED)
-    .text(`${edu.degree} (${edu.field})`);
+  doc.font("Helvetica").fontSize(10).fillColor(MUTED).text(`${edu.degree} (${edu.field})`);
   doc.moveDown(0.25);
 }
 

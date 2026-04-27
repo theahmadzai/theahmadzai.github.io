@@ -21,7 +21,6 @@ export function LinkedText({ text, links }: LinkedTextProps) {
         if (href) {
           return (
             <a
-              // biome-ignore lint/suspicious/noArrayIndexKey: parts are stable per-render
               key={i}
               href={href}
               target="_blank"

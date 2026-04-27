@@ -22,9 +22,7 @@ export function Projects() {
               className="group rounded-lg border border-fg/10 bg-fg/[0.02] p-5 transition-colors hover:border-accent/30 hover:bg-accent/[0.03]"
             >
               <HeadingTag
-                {...(project.url
-                  ? { href: project.url, target: "_blank", rel: "noreferrer" }
-                  : {})}
+                {...(project.url ? { href: project.url, target: "_blank", rel: "noreferrer" } : {})}
                 className={`font-pixel text-xl text-fg md:text-2xl ${
                   project.url ? "transition-colors group-hover:text-accent" : ""
                 }`}
@@ -43,9 +41,7 @@ export function Projects() {
                   ))}
                 </div>
               )}
-              <p className="mt-3 text-pretty text-sm leading-relaxed text-fg/80">
-                {project.blurb}
-              </p>
+              <p className="mt-3 text-pretty text-sm leading-relaxed text-fg/80">{project.blurb}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {project.stack.map((tech) => (
                   <Chip key={tech}>{tech}</Chip>
